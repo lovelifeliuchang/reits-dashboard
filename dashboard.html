@@ -35,12 +35,10 @@ input[type=text]:focus{border-color:#2563eb}
 </head>
 <body>
 <div class="wrap">
-
 <div class="header">
   <h1>公募REITs趋势 Dashboard</h1>
   <p>数据范围：2026-04-20 ~ 2026-05-07　共 18 个交易日　74 条公告　33 只活跃REIT</p>
 </div>
-
 <div class="stats">
   <div class="stat-card" style="--c:#3b82f6"><div class="num">74</div><div class="lbl">总公告数</div></div>
   <div class="stat-card" style="--c:#22c55e"><div class="num">4</div><div class="lbl">收益分配</div></div>
@@ -48,7 +46,6 @@ input[type=text]:focus{border-color:#2563eb}
   <div class="stat-card" style="--c:#f59e0b"><div class="num">4</div><div class="lbl">经营/临时公告</div></div>
   <div class="stat-card" style="--c:#6366f1"><div class="num">33</div><div class="lbl">活跃REIT</div></div>
 </div>
-
 <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px">
   <div class="card">
     <h2>每日公告数量趋势</h2>
@@ -59,296 +56,291 @@ input[type=text]:focus{border-color:#2563eb}
     <div class="chart-wrap"><canvas id="typeChart"></canvas></div>
   </div>
 </div>
-
 <div class="card">
   <h2>💰 收益分配公告（4 条）</h2>
   <table><thead><tr><th>公告日期</th><th>REIT名称</th><th>每份分红(元)</th><th>除息日</th><th>派息日</th><th>归属期</th><th>年化分红率</th><th>原文</th></tr></thead><tbody><tr>
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><strong>中航首钢绿能REIT</strong><br><span style="color:#9ca3af">180801</span></td>
-      <td style="font-weight:700;color:#22c55e">—</td>
-      <td>2026年4月24日</td>
-      <td>2026年4月28日</td>
-      <td style="color:#6b7280">—</td>
-      <td>—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124846.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><strong>华泰宝湾物流REIT</strong><br><span style="color:#9ca3af">180303</span></td>
-      <td style="font-weight:700;color:#22c55e">—</td>
-      <td>2026年4月24日</td>
-      <td>2026年4月28日</td>
-      <td style="color:#6b7280">—</td>
-      <td>—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124399.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-28</td>
-      <td><strong>鹏华深圳能源REIT</strong><br><span style="color:#9ca3af">180401</span></td>
-      <td style="font-weight:700;color:#22c55e">—</td>
-      <td>2026年05月06日</td>
-      <td>2026年05月08日</td>
-      <td style="color:#6b7280">—</td>
-      <td>—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198187.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><strong>中金联东科创REIT</strong><br><span style="color:#9ca3af">508003</span></td>
-      <td style="font-weight:700;color:#22c55e">—</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#6b7280">—</td>
-      <td>—</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821736537_1.PDF" target="_blank">📄查看</a></td>
-    </tr></tbody></table>
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><strong>中航首钢绿能REIT</strong><br><span style="color:#9ca3af">180801</span></td>
+          <td style="font-weight:700;color:#22c55e">—</td>
+          <td>2026年4月24日</td>
+          <td>2026年4月28日</td>
+          <td style="color:#6b7280">—</td>
+          <td>—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124846.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><strong>华泰宝湾物流REIT</strong><br><span style="color:#9ca3af">180303</span></td>
+          <td style="font-weight:700;color:#22c55e">—</td>
+          <td>2026年4月24日</td>
+          <td>2026年4月28日</td>
+          <td style="color:#6b7280">—</td>
+          <td>—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124399.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-28</td>
+          <td><strong>鹏华深圳能源REIT</strong><br><span style="color:#9ca3af">180401</span></td>
+          <td style="font-weight:700;color:#22c55e">—</td>
+          <td>2026年05月06日</td>
+          <td>2026年05月08日</td>
+          <td style="color:#6b7280">—</td>
+          <td>—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198187.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><strong>中金联东科创REIT</strong><br><span style="color:#9ca3af">508003</span></td>
+          <td style="font-weight:700;color:#22c55e">—</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#6b7280">—</td>
+          <td>—</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821736537_1.PDF" target="_blank">📄查看</a></td>
+        </tr></tbody></table>
 </div>
-
 <div class="card">
   <h2>📋 定期报告汇总（24 条）</h2>
-  <table>
-    <thead><tr><th>公告日期</th><th>REIT名称</th><th>报告期</th><th>每份可分配(元)</th><th>营业收入</th><th>出租率</th><th>通行量/发电量</th><th>同比</th><th>原文</th></tr></thead>
-    <tbody><tr>
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><strong>鹏华深圳能源REIT</strong><br><span style="color:#9ca3af">180401</span></td>
-      <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
-      <td style="font-weight:600;color:#2563eb">0.0736</td>
-      <td>283,009,205.12元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225132017.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><strong>红土盐田港REIT</strong><br><span style="color:#9ca3af">180301</span></td>
-      <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
-      <td style="font-weight:600;color:#2563eb">0.0226</td>
-      <td>28,736,036.48元</td>
-      <td>93.09%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225127044.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>工银蒙能清洁能源REIT</strong><br><span style="color:#9ca3af">180402</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0122</td>
-      <td>24,353,458.01元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141955.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>中航首钢绿能REIT</strong><br><span style="color:#9ca3af">180801</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.1093</td>
-      <td>101,007,326.37元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141038.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>平安广州广河REIT</strong><br><span style="color:#9ca3af">180201</span></td>
-      <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
-      <td style="font-weight:600;color:#2563eb">—</td>
-      <td>184,983,587.99元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140159.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>招商蛇口租赁住房REIT</strong><br><span style="color:#9ca3af">180502</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0283</td>
-      <td>20,044,244.04元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140008.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>招商高速公路REIT</strong><br><span style="color:#9ca3af">180203</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.1371</td>
-      <td>126,161,888.03元</td>
-      <td>—</td>
-      <td>14,128辆</td>
-      <td style="color:#22c55e">+18.65%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225139944.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>南方润泽科技数据中心REIT</strong><br><span style="color:#9ca3af">180901</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0604</td>
-      <td>136,114,811.31元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138235.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>南方顺丰物流REIT</strong><br><span style="color:#9ca3af">180305</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0433</td>
-      <td>59,485,205.17元</td>
-      <td>95.23%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138231.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏和达高科REIT</strong><br><span style="color:#9ca3af">180103</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0243</td>
-      <td>18,990,241.45元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138213.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏华润商业REIT</strong><br><span style="color:#9ca3af">180601</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0901</td>
-      <td>204,163,617.16元</td>
-      <td>98.37%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138179.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏深国际REIT</strong><br><span style="color:#9ca3af">180302</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0295</td>
-      <td>23,332,918.54元</td>
-      <td>85.51%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138176.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏中海商业REIT</strong><br><span style="color:#9ca3af">180607</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0549</td>
-      <td>30,373,540.52元</td>
-      <td>98.88%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138135.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏合肥高新REIT</strong><br><span style="color:#9ca3af">180102</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0121</td>
-      <td>13,192,806.60元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138050.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏安博仓储REIT</strong><br><span style="color:#9ca3af">180306</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0669</td>
-      <td>42,902,045.06元</td>
-      <td>96.66%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138007.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏大悦城商业REIT</strong><br><span style="color:#9ca3af">180603</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0462</td>
-      <td>90,524,933.88元</td>
-      <td>97.28%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137908.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华夏越秀高速REIT</strong><br><span style="color:#9ca3af">180202</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.1003</td>
-      <td>60,336,186.24元</td>
-      <td>—</td>
-      <td>2 辆次</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137718.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>博时蛇口产园REIT</strong><br><span style="color:#9ca3af">180101</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0143</td>
-      <td>40,475,359.89元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136711.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>易方达华威市场REIT</strong><br><span style="color:#9ca3af">180605</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0449</td>
-      <td>27,570,541.28元</td>
-      <td>93.78%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136112.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>易方达广开产园REIT</strong><br><span style="color:#9ca3af">180105</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0172</td>
-      <td>22,320,530.31元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136082.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>华泰宝湾物流REIT</strong><br><span style="color:#9ca3af">180303</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0482</td>
-      <td>19,383,230.33元</td>
-      <td>98.07%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136074.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>广发成都高投产业园REIT</strong><br><span style="color:#9ca3af">180106</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0388</td>
-      <td>23,403,111.66元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135595.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>中金印力消费REIT</strong><br><span style="color:#9ca3af">180602</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0427</td>
-      <td>87,337,208.56元</td>
-      <td>—</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135166.PDF" target="_blank">📄查看</a></td>
-    </tr><tr>
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><strong>中金中国绿发商业REIT</strong><br><span style="color:#9ca3af">180606</span></td>
-      <td style="color:#6b7280;font-size:12px">—</td>
-      <td style="font-weight:600;color:#2563eb">0.0418</td>
-      <td>42,275,021.03元</td>
-      <td>97.15%</td>
-      <td>—</td>
-      <td style="color:#9ca3af">—</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134417.PDF" target="_blank">📄查看</a></td>
-    </tr></tbody>
-  </table>
+  <table><thead><tr><th>公告日期</th><th>REIT名称</th><th>报告期</th><th>每份可分配(元)</th><th>营业收入</th><th>出租率</th><th>通行量/发电量</th><th>同比</th><th>原文</th></tr></thead>
+  <tbody><tr>
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><strong>鹏华深圳能源REIT</strong><br><span style="color:#9ca3af">180401</span></td>
+          <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
+          <td style="font-weight:600;color:#2563eb">0.0736</td>
+          <td>283,009,205.12元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225132017.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><strong>红土盐田港REIT</strong><br><span style="color:#9ca3af">180301</span></td>
+          <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
+          <td style="font-weight:600;color:#2563eb">0.0226</td>
+          <td>28,736,036.48元</td>
+          <td>93.09%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225127044.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>工银蒙能清洁能源REIT</strong><br><span style="color:#9ca3af">180402</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0122</td>
+          <td>24,353,458.01元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141955.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>中航首钢绿能REIT</strong><br><span style="color:#9ca3af">180801</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.1093</td>
+          <td>101,007,326.37元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141038.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>平安广州广河REIT</strong><br><span style="color:#9ca3af">180201</span></td>
+          <td style="color:#6b7280;font-size:12px">2026年01月01日起至2026年03月31日止</td>
+          <td style="font-weight:600;color:#2563eb">—</td>
+          <td>184,983,587.99元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140159.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>招商蛇口租赁住房REIT</strong><br><span style="color:#9ca3af">180502</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0283</td>
+          <td>20,044,244.04元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140008.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>招商高速公路REIT</strong><br><span style="color:#9ca3af">180203</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.1371</td>
+          <td>126,161,888.03元</td>
+          <td>—</td>
+          <td>14,128辆</td>
+          <td style="color:#22c55e">+18.65%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225139944.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>南方润泽科技数据中心REIT</strong><br><span style="color:#9ca3af">180901</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0604</td>
+          <td>136,114,811.31元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138235.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>南方顺丰物流REIT</strong><br><span style="color:#9ca3af">180305</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0433</td>
+          <td>59,485,205.17元</td>
+          <td>95.23%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138231.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏和达高科REIT</strong><br><span style="color:#9ca3af">180103</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0243</td>
+          <td>18,990,241.45元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138213.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏华润商业REIT</strong><br><span style="color:#9ca3af">180601</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0901</td>
+          <td>204,163,617.16元</td>
+          <td>98.37%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138179.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏深国际REIT</strong><br><span style="color:#9ca3af">180302</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0295</td>
+          <td>23,332,918.54元</td>
+          <td>85.51%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138176.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏中海商业REIT</strong><br><span style="color:#9ca3af">180607</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0549</td>
+          <td>30,373,540.52元</td>
+          <td>98.88%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138135.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏合肥高新REIT</strong><br><span style="color:#9ca3af">180102</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0121</td>
+          <td>13,192,806.60元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138050.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏安博仓储REIT</strong><br><span style="color:#9ca3af">180306</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0669</td>
+          <td>42,902,045.06元</td>
+          <td>96.66%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138007.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏大悦城商业REIT</strong><br><span style="color:#9ca3af">180603</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0462</td>
+          <td>90,524,933.88元</td>
+          <td>97.28%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137908.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华夏越秀高速REIT</strong><br><span style="color:#9ca3af">180202</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.1003</td>
+          <td>60,336,186.24元</td>
+          <td>—</td>
+          <td>2 辆次</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137718.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>博时蛇口产园REIT</strong><br><span style="color:#9ca3af">180101</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0143</td>
+          <td>40,475,359.89元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136711.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>易方达华威市场REIT</strong><br><span style="color:#9ca3af">180605</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0449</td>
+          <td>27,570,541.28元</td>
+          <td>93.78%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136112.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>易方达广开产园REIT</strong><br><span style="color:#9ca3af">180105</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0172</td>
+          <td>22,320,530.31元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136082.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>华泰宝湾物流REIT</strong><br><span style="color:#9ca3af">180303</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0482</td>
+          <td>19,383,230.33元</td>
+          <td>98.07%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136074.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>广发成都高投产业园REIT</strong><br><span style="color:#9ca3af">180106</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0388</td>
+          <td>23,403,111.66元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135595.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>中金印力消费REIT</strong><br><span style="color:#9ca3af">180602</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0427</td>
+          <td>87,337,208.56元</td>
+          <td>—</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135166.PDF" target="_blank">📄查看</a></td>
+        </tr><tr>
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><strong>中金中国绿发商业REIT</strong><br><span style="color:#9ca3af">180606</span></td>
+          <td style="color:#6b7280;font-size:12px">—</td>
+          <td style="font-weight:600;color:#2563eb">0.0418</td>
+          <td>42,275,021.03元</td>
+          <td>97.15%</td>
+          <td>—</td>
+          <td style="color:#9ca3af">—</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134417.PDF" target="_blank">📄查看</a></td>
+        </tr></tbody></table>
 </div>
-
 <div class="card">
   <h2>📑 全部公告明细（可筛选）</h2>
   <input type="text" id="searchBox" placeholder="搜索REIT名称/公告标题..." oninput="filterTable()">
@@ -356,634 +348,619 @@ input[type=text]:focus{border-color:#2563eb}
   <table id="mainTable">
     <thead><tr><th>日期</th><th>类型</th><th>REIT</th><th>公告标题</th><th>关键摘要</th><th>原文</th></tr></thead>
     <tbody id="mainBody"><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金基金产品资料概要更新">
-      <td style="white-space:nowrap">2026-05-07</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金基金产品资料概要更新</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金基金产品资料概要更新</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821992356_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事项临时更新)">
-      <td style="white-space:nowrap">2026-05-07</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事项临时更新)</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821992355_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="月度经营数据" data-text="华夏越秀高速reit 华夏越秀高速公路封闭式基础设施证券投资基金关于二〇二六年三月主要运营数据的公告">
-      <td style="white-space:nowrap">2026-05-07</td>
-      <td><span class="badge" style="background:#f59e0b">月度经营数据</span></td>
-      <td style="white-space:nowrap"><strong>华夏越秀高速REIT</strong></td>
-      <td style="max-width:320px">华夏越秀高速公路封闭式基础设施证券投资基金关于二〇二六年三月主要运营数据的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">2021年12月</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821989641_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中银中外运仓储物流reit 中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告">
-      <td style="white-space:nowrap">2026-05-06</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中银中外运仓储物流REIT</strong></td>
-      <td style="max-width:320px">中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982707_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏大悦城消费reit 华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新">
-      <td style="white-space:nowrap">2026-05-06</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏大悦城消费REIT</strong></td>
-      <td style="max-width:320px">华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605051821971532_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="博时蛇口产园reit 2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>博时蛇口产园REIT</strong></td>
-      <td style="max-width:320px">2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821986560_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安基金管理有限公司关于总经理变更的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
-      <td style="max-width:320px">华安基金管理有限公司关于总经理变更的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安基金管理有限公司关于总经理变更的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982685_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安基金管理有限公司关于高级管理人员变更的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
-      <td style="max-width:320px">华安基金管理有限公司关于高级管理人员变更的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安基金管理有限公司关于高级管理人员变更的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982702_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="国泰君安城投宽庭reit 国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>国泰君安城投宽庭REIT</strong></td>
-      <td style="max-width:320px">国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604301821864965_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="招商蛇口产业园reit 国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>招商蛇口产业园REIT</strong></td>
-      <td style="max-width:320px">国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604301821864966_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="富国首创水务reit 富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管理人员变动的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>富国首创水务REIT</strong></td>
-      <td style="max-width:320px">富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管理人员变动的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821783173_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
-      <td style="max-width:320px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764881_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
-      <td style="max-width:320px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764884_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安百联消费reit 华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安百联消费REIT</strong></td>
-      <td style="max-width:320px">华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764885_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华安百联消费reit 华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华安百联消费REIT</strong></td>
-      <td style="max-width:320px">华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764412_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏深国际reit 关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况的公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏深国际REIT</strong></td>
-      <td style="max-width:320px">关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821749069_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="收益分配" data-text="中金联东科创reit 中金基金管理有限公司关于中金联东科技创新产业园封闭式基础设施证券投资基金2026年第二次分红公告">
-      <td style="white-space:nowrap">2026-04-30</td>
-      <td><span class="badge" style="background:#22c55e">收益分配</span></td>
-      <td style="white-space:nowrap"><strong>中金联东科创REIT</strong></td>
-      <td style="max-width:320px">中金基金管理有限公司关于中金联东科技创新产业园封闭式基础设施证券投资基金2026年第二次分红公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">收益分配公告</td>
-      <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821736537_1.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告">
-      <td style="white-space:nowrap">2026-04-29</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
-      <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-29/1225231545.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告">
-      <td style="white-space:nowrap">2026-04-29</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
-      <td style="max-width:320px">关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-29/1225226609.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="收益分配" data-text="鹏华深圳能源reit 鹏华基金管理有限公司关于鹏华深圳能源清洁能源封闭式基础设施证券投资基金收益分配的公告">
-      <td style="white-space:nowrap">2026-04-28</td>
-      <td><span class="badge" style="background:#22c55e">收益分配</span></td>
-      <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
-      <td style="max-width:320px">鹏华基金管理有限公司关于鹏华深圳能源清洁能源封闭式基础设施证券投资基金收益分配的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">除息日 2026年05月06日</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198187.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="工银蒙能清洁能源reit 工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-28</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>工银蒙能清洁能源REIT</strong></td>
-      <td style="max-width:320px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198186.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏中海消费封闭式基础设施证券投资基金托管协议">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
-      <td style="max-width:320px">华夏中海消费封闭式基础设施证券投资基金托管协议</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏中海消费封闭式基础设施证券投资基金托管协议</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187717.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏中海消费封闭式基础设施证券投资基金基金合同">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
-      <td style="max-width:320px">华夏中海消费封闭式基础设施证券投资基金基金合同</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏中海消费封闭式基础设施证券投资基金基金合同</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187716.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的公告">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
-      <td style="max-width:320px">华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187715.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金基金合同">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金基金合同</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金基金合同</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187714.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金托管协议">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金托管协议</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金托管协议</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187713.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名称、基金简称的公告">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名称、基金简称的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187712.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏大悦城商业reit 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称的公告">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
-      <td style="max-width:320px">华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187709.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏华润消费封闭式基础设施证券投资基金托管协议">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
-      <td style="max-width:320px">华夏华润消费封闭式基础设施证券投资基金托管协议</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏华润消费封闭式基础设施证券投资基金托管协议</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187674.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏华润消费封闭式基础设施证券投资基金基金合同">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
-      <td style="max-width:320px">华夏华润消费封闭式基础设施证券投资基金基金合同</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏华润消费封闭式基础设施证券投资基金基金合同</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187673.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的公告">
-      <td style="white-space:nowrap">2026-04-25</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
-      <td style="max-width:320px">华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187672.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告">
-      <td style="white-space:nowrap">2026-04-24</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
-      <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225163033.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书">
-      <td style="white-space:nowrap">2026-04-24</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
-      <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225161635.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金印力消费reit 中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-24</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金印力消费REIT</strong></td>
-      <td style="max-width:320px">中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225161537.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏合肥高新reit 关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说明会暨投资者开放日活动的公告">
-      <td style="white-space:nowrap">2026-04-23</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
-      <td style="max-width:320px">关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说明会暨投资者开放日活动的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225147372.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航首钢绿能reit 关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告">
-      <td style="white-space:nowrap">2026-04-23</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
-      <td style="max-width:320px">关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225144543.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-23</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225143235.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="工银蒙能清洁能源reit 工银瑞信蒙能清洁能源封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>工银蒙能清洁能源REIT</strong></td>
-      <td style="max-width:320px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141955.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="中航首钢绿能reit 中航首钢生物质封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
-      <td style="max-width:320px">中航首钢生物质封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141038.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="平安广州广河reit 平安广州交投广河高速公路封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>平安广州广河REIT</strong></td>
-      <td style="max-width:320px">平安广州交投广河高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140159.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="招商蛇口租赁住房reit 招商基金招商蛇口租赁住房封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>招商蛇口租赁住房REIT</strong></td>
-      <td style="max-width:320px">招商基金招商蛇口租赁住房封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0283 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140008.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
-      <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：通行量 14,128辆　同比 +18.65%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225139944.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="临时公告" data-text="华夏合肥高新reit 华夏合肥高新创新产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#f59e0b">临时公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
-      <td style="max-width:320px">华夏合肥高新创新产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">2022年9月 出租率 64.28%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138567.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="南方润泽科技数据中心reit 南方润泽科技数据中心封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>南方润泽科技数据中心REIT</strong></td>
-      <td style="max-width:320px">南方润泽科技数据中心封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0604 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138235.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="南方顺丰物流reit 南方顺丰仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>南方顺丰物流REIT</strong></td>
-      <td style="max-width:320px">南方顺丰仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0433 元　出租率 95.23%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138231.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏和达高科reit 华夏杭州和达高科产业园封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏和达高科REIT</strong></td>
-      <td style="max-width:320px">华夏杭州和达高科产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0243 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138213.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏华润商业reit 华夏华润商业资产封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
-      <td style="max-width:320px">华夏华润商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0901 元　出租率 98.37%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138179.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏深国际reit 华夏深国际仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏深国际REIT</strong></td>
-      <td style="max-width:320px">华夏深国际仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0295 元　出租率 85.51%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138176.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏中海商业reit 华夏中海商业资产封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
-      <td style="max-width:320px">华夏中海商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0549 元　出租率 98.88%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138135.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏合肥高新reit 华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
-      <td style="max-width:320px">华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0121 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138050.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏安博仓储reit 华夏安博仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏安博仓储REIT</strong></td>
-      <td style="max-width:320px">华夏安博仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0669 元　出租率 96.66%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138007.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏大悦城商业reit 华夏大悦城购物中心封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
-      <td style="max-width:320px">华夏大悦城购物中心封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0462 元　出租率 97.28%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137908.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华夏越秀高速reit 华夏越秀高速公路封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华夏越秀高速REIT</strong></td>
-      <td style="max-width:320px">华夏越秀高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：通行量 2 辆次</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137718.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="博时蛇口产园reit 博时招商蛇口产业园封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>博时蛇口产园REIT</strong></td>
-      <td style="max-width:320px">博时招商蛇口产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0143 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136711.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="南方润泽科技数据中心reit 关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>南方润泽科技数据中心REIT</strong></td>
-      <td style="max-width:320px">关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136307.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="易方达华威市场reit 易方达华威农贸市场封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>易方达华威市场REIT</strong></td>
-      <td style="max-width:320px">易方达华威农贸市场封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0449 元　出租率 93.78%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136112.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="易方达广开产园reit 易方达广州开发区高新产业园封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>易方达广开产园REIT</strong></td>
-      <td style="max-width:320px">易方达广州开发区高新产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0172 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136082.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="华泰宝湾物流reit 华泰紫金宝湾物流仓储封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>华泰宝湾物流REIT</strong></td>
-      <td style="max-width:320px">华泰紫金宝湾物流仓储封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0482 元　出租率 98.07%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136074.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="广发成都高投产业园reit 广发成都高投产业园封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>广发成都高投产业园REIT</strong></td>
-      <td style="max-width:320px">广发成都高投产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0388 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135595.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="中金印力消费reit 中金印力消费基础设施封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>中金印力消费REIT</strong></td>
-      <td style="max-width:320px">中金印力消费基础设施封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0427 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135166.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="中金中国绿发商业reit 中金中国绿发商业资产封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
-      <td style="max-width:320px">中金中国绿发商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0418 元　出租率 97.15%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134417.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="易方达广开产园reit 易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及2026年第1季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>易方达广开产园REIT</strong></td>
-      <td style="max-width:320px">易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及2026年第1季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及202</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134311.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="临时公告" data-text="华夏和达高科reit 华夏杭州和达高科产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#f59e0b">临时公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏和达高科REIT</strong></td>
-      <td style="max-width:320px">华夏杭州和达高科产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">2022年12月 出租率 90.97%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134309.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="中航首钢绿能reit 关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
-      <td style="max-width:320px">关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134308.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="华夏大悦城商业reit 关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告">
-      <td style="white-space:nowrap">2026-04-22</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
-      <td style="max-width:320px">关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134044.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="鹏华深圳能源reit 鹏华深圳能源清洁能源封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
-      <td style="max-width:320px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0736 元</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225132017.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="定期报告" data-text="红土盐田港reit 红土创新盐田港仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
-      <td style="white-space:nowrap"><strong>红土盐田港REIT</strong></td>
-      <td style="max-width:320px">红土创新盐田港仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0226 元　出租率 93.09%</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225127044.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="鹏华深圳能源reit 鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
-      <td style="max-width:320px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124971.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="收益分配" data-text="中航首钢绿能reit 中航基金管理有限公司关于中航首钢生物质封闭式基础设施证券投资基金收益分配的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#22c55e">收益分配</span></td>
-      <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
-      <td style="max-width:320px">中航基金管理有限公司关于中航首钢生物质封闭式基础设施证券投资基金收益分配的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">分配比例 99.9828%　除息日 2026年4月24日</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124846.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="广发成都高投产业园reit 关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日活动的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>广发成都高投产业园REIT</strong></td>
-      <td style="max-width:320px">关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日活动的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124841.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
-      <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124838.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="收益分配" data-text="华泰宝湾物流reit 华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#22c55e">收益分配</span></td>
-      <td style="white-space:nowrap"><strong>华泰宝湾物流REIT</strong></td>
-      <td style="max-width:320px">华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">除息日 2026年4月24日</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124399.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="月度经营数据" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金关于不动产项目2026年3月主要运营数据的公告">
-      <td style="white-space:nowrap">2026-04-21</td>
-      <td><span class="badge" style="background:#f59e0b">月度经营数据</span></td>
-      <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
-      <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于不动产项目2026年3月主要运营数据的公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">2026年3月</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124398.PDF" target="_blank">📄查看</a></td>
-    </tr><tr data-type="其他公告" data-text="南方顺丰物流reit 南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告">
-      <td style="white-space:nowrap">2026-04-20</td>
-      <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
-      <td style="white-space:nowrap"><strong>南方顺丰物流REIT</strong></td>
-      <td style="max-width:320px">南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告</td>
-      <td style="color:#6b7280;max-width:240px;font-size:12px">南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告</td>
-      <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-20/1225115636.PDF" target="_blank">📄查看</a></td>
-    </tr></tbody>
+          <td style="white-space:nowrap">2026-05-07</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金基金产品资料概要更新</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金基金产品资料概要更新</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821992356_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事项临时更新)">
+          <td style="white-space:nowrap">2026-05-07</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事项临时更新)</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金更新招募说明书(2026年第1次重大事</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821992355_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="月度经营数据" data-text="华夏越秀高速reit 华夏越秀高速公路封闭式基础设施证券投资基金关于二〇二六年三月主要运营数据的公告">
+          <td style="white-space:nowrap">2026-05-07</td>
+          <td><span class="badge" style="background:#f59e0b">月度经营数据</span></td>
+          <td style="white-space:nowrap"><strong>华夏越秀高速REIT</strong></td>
+          <td style="max-width:320px">华夏越秀高速公路封闭式基础设施证券投资基金关于二〇二六年三月主要运营数据的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">2021年12月</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821989641_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中银中外运仓储物流reit 中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告">
+          <td style="white-space:nowrap">2026-05-06</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中银中外运仓储物流REIT</strong></td>
+          <td style="max-width:320px">中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中银基金管理有限公司关于开展电子直销平台费率优惠活动的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982707_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏大悦城消费reit 华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新">
+          <td style="white-space:nowrap">2026-05-06</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏大悦城消费REIT</strong></td>
+          <td style="max-width:320px">华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏大悦城购物中心封闭式基础设施证券投资基金基金产品资料概要更新</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605051821971532_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="博时蛇口产园reit 2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>博时蛇口产园REIT</strong></td>
+          <td style="max-width:320px">2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">2025年度博时基金以股东身份(通过公募基金持股)参与股东大会投票信息披露</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821986560_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安基金管理有限公司关于总经理变更的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
+          <td style="max-width:320px">华安基金管理有限公司关于总经理变更的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安基金管理有限公司关于总经理变更的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982685_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安基金管理有限公司关于高级管理人员变更的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
+          <td style="max-width:320px">华安基金管理有限公司关于高级管理人员变更的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安基金管理有限公司关于高级管理人员变更的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202605061821982702_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="国泰君安城投宽庭reit 国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>国泰君安城投宽庭REIT</strong></td>
+          <td style="max-width:320px">国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">国泰海通临港创新智造产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604301821864965_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="招商蛇口产业园reit 国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>招商蛇口产业园REIT</strong></td>
+          <td style="max-width:320px">国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有限公司吸收合并上海海通证券资产管理有限公司重要事项的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">国泰海通东久新经济产业园封闭式基础设施证券投资基金关于上海国泰海通证券资产管理有</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604301821864966_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="富国首创水务reit 富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管理人员变动的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>富国首创水务REIT</strong></td>
+          <td style="max-width:320px">富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管理人员变动的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">富国首创水务封闭式基础设施证券投资基金关于运营管理机构基金信息披露负责人及高级管</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821783173_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
+          <td style="max-width:320px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764881_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安张江产业园reit 华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安张江产业园REIT</strong></td>
+          <td style="max-width:320px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安张江产业园封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764884_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安百联消费reit 华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安百联消费REIT</strong></td>
+          <td style="max-width:320px">华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安百联消费封闭式基础设施证券投资基金关于基金管理人总经理变更情况的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764885_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华安百联消费reit 华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华安百联消费REIT</strong></td>
+          <td style="max-width:320px">华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华安百联消费封闭式基础设施证券投资基金关于基金管理人高级管理人员变更情况的公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821764412_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏深国际reit 关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况的公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏深国际REIT</strong></td>
+          <td style="max-width:320px">关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于华夏深国际仓储物流封闭式基础设施证券投资基金运营管理机构高级管理人员变更情况</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821749069_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="收益分配" data-text="中金联东科创reit 中金基金管理有限公司关于中金联东科技创新产业园封闭式基础设施证券投资基金2026年第二次分红公告">
+          <td style="white-space:nowrap">2026-04-30</td>
+          <td><span class="badge" style="background:#22c55e">收益分配</span></td>
+          <td style="white-space:nowrap"><strong>中金联东科创REIT</strong></td>
+          <td style="max-width:320px">中金基金管理有限公司关于中金联东科技创新产业园封闭式基础设施证券投资基金2026年第二次分红公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">收益分配公告</td>
+          <td><a class="pdf-btn" href="https://pdf.dfcfw.com/pdf/H2_AN202604291821736537_1.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告">
+          <td style="white-space:nowrap">2026-04-29</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
+          <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易提示性公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-29/1225231545.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告">
+          <td style="white-space:nowrap">2026-04-29</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
+          <td style="max-width:320px">关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航北京昌保租赁住房封闭式基础设施证券投资基金新增流动性服务商的公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-29/1225226609.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="收益分配" data-text="鹏华深圳能源reit 鹏华基金管理有限公司关于鹏华深圳能源清洁能源封闭式基础设施证券投资基金收益分配的公告">
+          <td style="white-space:nowrap">2026-04-28</td>
+          <td><span class="badge" style="background:#22c55e">收益分配</span></td>
+          <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
+          <td style="max-width:320px">鹏华基金管理有限公司关于鹏华深圳能源清洁能源封闭式基础设施证券投资基金收益分配的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">除息日 2026年05月06日</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198187.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="工银蒙能清洁能源reit 工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-28</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>工银蒙能清洁能源REIT</strong></td>
+          <td style="max-width:320px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金关于召开2025年年度业绩说明会的</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-28/1225198186.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏中海消费封闭式基础设施证券投资基金托管协议">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
+          <td style="max-width:320px">华夏中海消费封闭式基础设施证券投资基金托管协议</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏中海消费封闭式基础设施证券投资基金托管协议</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187717.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏中海消费封闭式基础设施证券投资基金基金合同">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
+          <td style="max-width:320px">华夏中海消费封闭式基础设施证券投资基金基金合同</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏中海消费封闭式基础设施证券投资基金基金合同</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187716.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏中海商业reit 华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的公告">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
+          <td style="max-width:320px">华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏中海商业资产封闭式基础设施证券投资基金变更基金名称的</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187715.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金基金合同">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金基金合同</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金基金合同</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187714.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发消费封闭式基础设施证券投资基金托管协议">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发消费封闭式基础设施证券投资基金托管协议</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发消费封闭式基础设施证券投资基金托管协议</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187713.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名称、基金简称的公告">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名称、基金简称的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金基金管理有限公司关于中金中国绿发商业资产封闭式基础设施证券投资基金变更基金名</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187712.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏大悦城商业reit 华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称的公告">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
+          <td style="max-width:320px">华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏大悦城购物中心封闭式基础设施证券投资基金变更基金简称</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187709.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏华润消费封闭式基础设施证券投资基金托管协议">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
+          <td style="max-width:320px">华夏华润消费封闭式基础设施证券投资基金托管协议</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏华润消费封闭式基础设施证券投资基金托管协议</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187674.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏华润消费封闭式基础设施证券投资基金基金合同">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
+          <td style="max-width:320px">华夏华润消费封闭式基础设施证券投资基金基金合同</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏华润消费封闭式基础设施证券投资基金基金合同</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187673.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏华润商业reit 华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的公告">
+          <td style="white-space:nowrap">2026-04-25</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
+          <td style="max-width:320px">华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">华夏基金管理有限公司关于华夏华润商业资产封闭式基础设施证券投资基金变更基金名称的</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-25/1225187672.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告">
+          <td style="white-space:nowrap">2026-04-24</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
+          <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金开通跨系统转托管业务的公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225163033.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航北京昌保租赁reit 中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书">
+          <td style="white-space:nowrap">2026-04-24</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航北京昌保租赁REIT</strong></td>
+          <td style="max-width:320px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中航北京昌保租赁住房封闭式基础设施证券投资基金上市交易公告书</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225161635.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金印力消费reit 中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-24</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金印力消费REIT</strong></td>
+          <td style="max-width:320px">中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金印力消费基础设施封闭式基础设施证券投资基金关于召开2025年度及2026年1</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-24/1225161537.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏合肥高新reit 关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说明会暨投资者开放日活动的公告">
+          <td style="white-space:nowrap">2026-04-23</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
+          <td style="max-width:320px">关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说明会暨投资者开放日活动的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于举办华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度业绩说</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225147372.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航首钢绿能reit 关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告">
+          <td style="white-space:nowrap">2026-04-23</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
+          <td style="max-width:320px">关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航首钢生物质封闭式基础设施证券投资基金新增流动性服务商的公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225144543.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中金中国绿发商业reit 中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-23</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">中金中国绿发商业资产封闭式基础设施证券投资基金关于召开2025年度及2026年1</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225143235.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="工银蒙能清洁能源reit 工银瑞信蒙能清洁能源封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>工银蒙能清洁能源REIT</strong></td>
+          <td style="max-width:320px">工银瑞信蒙能清洁能源封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141955.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="中航首钢绿能reit 中航首钢生物质封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
+          <td style="max-width:320px">中航首钢生物质封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225141038.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="平安广州广河reit 平安广州交投广河高速公路封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>平安广州广河REIT</strong></td>
+          <td style="max-width:320px">平安广州交投广河高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">定期报告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140159.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="招商蛇口租赁住房reit 招商基金招商蛇口租赁住房封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>招商蛇口租赁住房REIT</strong></td>
+          <td style="max-width:320px">招商基金招商蛇口租赁住房封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0283 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225140008.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
+          <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：通行量 14,128辆　同比 +18.65%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225139944.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="临时公告" data-text="华夏合肥高新reit 华夏合肥高新创新产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#f59e0b">临时公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
+          <td style="max-width:320px">华夏合肥高新创新产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">2022年9月 出租率 64.28%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138567.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="南方润泽科技数据中心reit 南方润泽科技数据中心封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>南方润泽科技数据中心REIT</strong></td>
+          <td style="max-width:320px">南方润泽科技数据中心封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0604 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138235.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="南方顺丰物流reit 南方顺丰仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>南方顺丰物流REIT</strong></td>
+          <td style="max-width:320px">南方顺丰仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0433 元　出租率 95.23%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138231.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏和达高科reit 华夏杭州和达高科产业园封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏和达高科REIT</strong></td>
+          <td style="max-width:320px">华夏杭州和达高科产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0243 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138213.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏华润商业reit 华夏华润商业资产封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏华润商业REIT</strong></td>
+          <td style="max-width:320px">华夏华润商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0901 元　出租率 98.37%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138179.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏深国际reit 华夏深国际仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏深国际REIT</strong></td>
+          <td style="max-width:320px">华夏深国际仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0295 元　出租率 85.51%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138176.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏中海商业reit 华夏中海商业资产封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏中海商业REIT</strong></td>
+          <td style="max-width:320px">华夏中海商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0549 元　出租率 98.88%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138135.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏合肥高新reit 华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏合肥高新REIT</strong></td>
+          <td style="max-width:320px">华夏合肥高新创新产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0121 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138050.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏安博仓储reit 华夏安博仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏安博仓储REIT</strong></td>
+          <td style="max-width:320px">华夏安博仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0669 元　出租率 96.66%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225138007.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏大悦城商业reit 华夏大悦城购物中心封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
+          <td style="max-width:320px">华夏大悦城购物中心封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0462 元　出租率 97.28%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137908.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华夏越秀高速reit 华夏越秀高速公路封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华夏越秀高速REIT</strong></td>
+          <td style="max-width:320px">华夏越秀高速公路封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：通行量 2 辆次</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225137718.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="博时蛇口产园reit 博时招商蛇口产业园封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>博时蛇口产园REIT</strong></td>
+          <td style="max-width:320px">博时招商蛇口产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0143 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136711.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="南方润泽科技数据中心reit 关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>南方润泽科技数据中心REIT</strong></td>
+          <td style="max-width:320px">关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于南方润泽科技数据中心封闭式基础设施证券投资基金召开2025年度业绩说明会的公</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136307.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="易方达华威市场reit 易方达华威农贸市场封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>易方达华威市场REIT</strong></td>
+          <td style="max-width:320px">易方达华威农贸市场封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0449 元　出租率 93.78%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136112.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="易方达广开产园reit 易方达广州开发区高新产业园封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>易方达广开产园REIT</strong></td>
+          <td style="max-width:320px">易方达广州开发区高新产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0172 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136082.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="华泰宝湾物流reit 华泰紫金宝湾物流仓储封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>华泰宝湾物流REIT</strong></td>
+          <td style="max-width:320px">华泰紫金宝湾物流仓储封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0482 元　出租率 98.07%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225136074.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="广发成都高投产业园reit 广发成都高投产业园封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>广发成都高投产业园REIT</strong></td>
+          <td style="max-width:320px">广发成都高投产业园封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0388 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135595.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="中金印力消费reit 中金印力消费基础设施封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>中金印力消费REIT</strong></td>
+          <td style="max-width:320px">中金印力消费基础设施封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0427 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225135166.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="中金中国绿发商业reit 中金中国绿发商业资产封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>中金中国绿发商业REIT</strong></td>
+          <td style="max-width:320px">中金中国绿发商业资产封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0418 元　出租率 97.15%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134417.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="易方达广开产园reit 易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及2026年第1季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>易方达广开产园REIT</strong></td>
+          <td style="max-width:320px">易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及2026年第1季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">易方达广州开发区高新产业园封闭式基础设施证券投资基金关于召开2025年度及202</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134311.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="临时公告" data-text="华夏和达高科reit 华夏杭州和达高科产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#f59e0b">临时公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏和达高科REIT</strong></td>
+          <td style="max-width:320px">华夏杭州和达高科产业园封闭式基础设施证券投资基金关于2026年第1季度经营情况的临时公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">2022年12月 出租率 90.97%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134309.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="中航首钢绿能reit 关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
+          <td style="max-width:320px">关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于中航首钢生物质封闭式基础设施证券投资基金举办2025年度及2026年第1季度</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134308.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="华夏大悦城商业reit 关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告">
+          <td style="white-space:nowrap">2026-04-22</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>华夏大悦城商业REIT</strong></td>
+          <td style="max-width:320px">关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于华夏大悦城购物中心封闭式基础设施证券投资基金举办投资者开放日活动的公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-22/1225134044.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="鹏华深圳能源reit 鹏华深圳能源清洁能源封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
+          <td style="max-width:320px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0736 元</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225132017.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="定期报告" data-text="红土盐田港reit 红土创新盐田港仓储物流封闭式基础设施证券投资基金2026年第1季度报告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#3b82f6">定期报告</span></td>
+          <td style="white-space:nowrap"><strong>红土盐田港REIT</strong></td>
+          <td style="max-width:320px">红土创新盐田港仓储物流封闭式基础设施证券投资基金2026年第1季度报告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">：每份可分配 0.0226 元　出租率 93.09%</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225127044.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="鹏华深圳能源reit 鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>鹏华深圳能源REIT</strong></td>
+          <td style="max-width:320px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">鹏华深圳能源清洁能源封闭式基础设施证券投资基金关于召开2025年度及2026年一</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124971.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="收益分配" data-text="中航首钢绿能reit 中航基金管理有限公司关于中航首钢生物质封闭式基础设施证券投资基金收益分配的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#22c55e">收益分配</span></td>
+          <td style="white-space:nowrap"><strong>中航首钢绿能REIT</strong></td>
+          <td style="max-width:320px">中航基金管理有限公司关于中航首钢生物质封闭式基础设施证券投资基金收益分配的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">分配比例 99.9828%　除息日 2026年4月24日</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124846.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="广发成都高投产业园reit 关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日活动的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>广发成都高投产业园REIT</strong></td>
+          <td style="max-width:320px">关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日活动的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">关于广发成都高投产业园封闭式基础设施证券投资基金举办2026年第一次投资者开放日</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124841.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
+          <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026年1季度业绩说明会的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于召开2025年度及2026</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124838.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="收益分配" data-text="华泰宝湾物流reit 华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#22c55e">收益分配</span></td>
+          <td style="white-space:nowrap"><strong>华泰宝湾物流REIT</strong></td>
+          <td style="max-width:320px">华泰证券(上海)资产管理有限公司关于华泰紫金宝湾物流仓储封闭式基础设施证券投资基金收益分配的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">除息日 2026年4月24日</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124399.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="月度经营数据" data-text="招商高速公路reit 招商基金招商公路高速公路封闭式基础设施证券投资基金关于不动产项目2026年3月主要运营数据的公告">
+          <td style="white-space:nowrap">2026-04-21</td>
+          <td><span class="badge" style="background:#f59e0b">月度经营数据</span></td>
+          <td style="white-space:nowrap"><strong>招商高速公路REIT</strong></td>
+          <td style="max-width:320px">招商基金招商公路高速公路封闭式基础设施证券投资基金关于不动产项目2026年3月主要运营数据的公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">2026年3月</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-21/1225124398.PDF" target="_blank">📄查看</a></td>
+        </tr><tr data-type="其他公告" data-text="南方顺丰物流reit 南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告">
+          <td style="white-space:nowrap">2026-04-20</td>
+          <td><span class="badge" style="background:#9ca3af">其他公告</span></td>
+          <td style="white-space:nowrap"><strong>南方顺丰物流REIT</strong></td>
+          <td style="max-width:320px">南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告</td>
+          <td style="color:#6b7280;max-width:240px;font-size:12px">南方顺丰仓储物流封闭式基础设施证券投资基金关于基金份额解除限售的提示性公告</td>
+          <td><a class="pdf-btn" href="https://static.cninfo.com.cn/finalpage/2026-04-20/1225115636.PDF" target="_blank">📄查看</a></td>
+        </tr></tbody>
   </table>
 </div>
-
 <div class="card">
   <h2>🏆 活跃REIT排行（按公告数）</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px"><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">中金中国绿发商业REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 7 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告6</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">中航首钢绿能REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#22c55e">收益分配1</span>　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告2</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华夏华润商业REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告3</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华夏中海商业REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告3</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">中航北京昌保租赁REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#9ca3af">其他公告4</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华安张江产业园REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#9ca3af">其他公告4</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">鹏华深圳能源REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#22c55e">收益分配1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">招商高速公路REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#f59e0b">月度经营数据1</span>　<span style="color:#3b82f6">定期报告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华夏合肥高新REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#f59e0b">临时公告1</span>　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华夏大悦城商业REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告2</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">南方顺丰物流REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#3b82f6">定期报告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">广发成都高投产业园REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#3b82f6">定期报告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">华泰宝湾物流REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#22c55e">收益分配1</span>　<span style="color:#3b82f6">定期报告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">工银蒙能清洁能源REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
-    </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
-      <div style="font-weight:600">南方润泽科技数据中心REIT</div>
-      <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
-    </div></div>
+          <div style="font-weight:600">中金中国绿发商业REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 7 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告6</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">中航首钢绿能REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#22c55e">收益分配1</span>　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告2</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华夏华润商业REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告3</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华夏中海商业REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告3</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">中航北京昌保租赁REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#9ca3af">其他公告4</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华安张江产业园REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 4 条公告　<span style="color:#9ca3af">其他公告4</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">鹏华深圳能源REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#22c55e">收益分配1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">招商高速公路REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#f59e0b">月度经营数据1</span>　<span style="color:#3b82f6">定期报告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华夏合肥高新REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#f59e0b">临时公告1</span>　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华夏大悦城商业REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 3 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告2</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">南方顺丰物流REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#3b82f6">定期报告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">广发成都高投产业园REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#9ca3af">其他公告1</span>　<span style="color:#3b82f6">定期报告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">华泰宝湾物流REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#22c55e">收益分配1</span>　<span style="color:#3b82f6">定期报告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">工银蒙能清洁能源REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
+        </div><div style="padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+          <div style="font-weight:600">南方润泽科技数据中心REIT</div>
+          <div style="font-size:12px;color:#6b7280;margin-top:2px">共 2 条公告　<span style="color:#3b82f6">定期报告1</span>　<span style="color:#9ca3af">其他公告1</span></div>
+        </div></div>
 </div>
-
 <div style="text-align:center;color:#9ca3af;font-size:12px;margin:16px 0 8px">
-  数据来源：巨潮资讯 · AKShare　|　生成时间：2026-05-07
+  数据来源：巨潮资讯 · AKShare　|　更新时间：2026-05-07
 </div>
 </div>
-
 <script>
 const DAILY_LABELS = ["2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07"];
 const DAILY_BY_TYPE = {"收益分配": [0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0], "定期报告": [0, 2, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "月度经营数据": [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], "临时公告": [0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "发售公告": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "扩募并购": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "持有人大会": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "其他公告": [1, 3, 4, 3, 3, 10, 0, 0, 1, 2, 11, 0, 0, 0, 0, 0, 2, 2]};
 const TYPE_COLORS  = {"收益分配": "#22c55e", "定期报告": "#3b82f6", "月度经营数据": "#f59e0b", "临时公告": "#f59e0b", "发售公告": "#a855f7", "扩募并购": "#6366f1", "持有人大会": "#ef4444", "其他公告": "#9ca3af"};
 const TYPE_ORDER   = ["收益分配", "定期报告", "月度经营数据", "临时公告", "发售公告", "扩募并购", "持有人大会", "其他公告"];
 const TYPE_TOTALS  = {"收益分配": 4, "定期报告": 24, "月度经营数据": 2, "临时公告": 2, "其他公告": 42};
-
 new Chart(document.getElementById('dailyChart').getContext('2d'), {
-  type: 'bar',
-  data: {
-    labels: DAILY_LABELS,
-    datasets: TYPE_ORDER.filter(t => DAILY_BY_TYPE[t].some(v=>v>0)).map(t => ({
-      label: t, data: DAILY_BY_TYPE[t],
-      backgroundColor: TYPE_COLORS[t] + 'cc', borderColor: TYPE_COLORS[t], borderWidth:1,
+  type:'bar', data:{ labels:DAILY_LABELS,
+    datasets:TYPE_ORDER.filter(t=>DAILY_BY_TYPE[t].some(v=>v>0)).map(t=>({
+      label:t, data:DAILY_BY_TYPE[t],
+      backgroundColor:TYPE_COLORS[t]+'cc', borderColor:TYPE_COLORS[t], borderWidth:1
     }))
   },
-  options: {
-    responsive:true, maintainAspectRatio:false,
+  options:{ responsive:true, maintainAspectRatio:false,
     plugins:{ legend:{ position:'bottom', labels:{ font:{size:11}, boxWidth:12 } } },
-    scales:{
-      x:{ stacked:true, ticks:{ font:{size:10}, maxRotation:45 } },
-      y:{ stacked:true, beginAtZero:true, ticks:{ stepSize:1 } }
-    }
+    scales:{ x:{ stacked:true, ticks:{ font:{size:10}, maxRotation:45 } },
+              y:{ stacked:true, beginAtZero:true, ticks:{ stepSize:1 } } }
   }
 });
-
 new Chart(document.getElementById('typeChart').getContext('2d'), {
-  type: 'doughnut',
-  data: {
-    labels: Object.keys(TYPE_TOTALS),
-    datasets: [{ data: Object.values(TYPE_TOTALS),
-      backgroundColor: Object.keys(TYPE_TOTALS).map(t => TYPE_COLORS[t]||'#9ca3af'), borderWidth:2 }]
+  type:'doughnut', data:{ labels:Object.keys(TYPE_TOTALS),
+    datasets:[{ data:Object.values(TYPE_TOTALS),
+      backgroundColor:Object.keys(TYPE_TOTALS).map(t=>TYPE_COLORS[t]||'#9ca3af'), borderWidth:2 }]
   },
-  options: {
-    responsive:true, maintainAspectRatio:false,
+  options:{ responsive:true, maintainAspectRatio:false,
     plugins:{ legend:{ position:'right', labels:{ font:{size:11}, boxWidth:12 } } }
   }
 });
-
-let currentType = '';
-function setType(t, btn) {
-  currentType = t;
-  document.querySelectorAll('#typeFilters .filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  filterTable();
+let currentType='';
+function setType(t,btn){
+  currentType=t;
+  document.querySelectorAll('#typeFilters .filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); filterTable();
 }
-function filterTable() {
-  const q = document.getElementById('searchBox').value.toLowerCase();
-  document.querySelectorAll('#mainBody tr').forEach(tr => {
-    const typeMatch = !currentType || tr.dataset.type === currentType;
-    const textMatch = !q || tr.dataset.text.includes(q);
-    tr.style.display = typeMatch && textMatch ? '' : 'none';
+function filterTable(){
+  const q=document.getElementById('searchBox').value.toLowerCase();
+  document.querySelectorAll('#mainBody tr').forEach(tr=>{
+    const typeMatch=!currentType||tr.dataset.type===currentType;
+    const textMatch=!q||tr.dataset.text.includes(q);
+    tr.style.display=typeMatch&&textMatch?'':'none';
   });
 }
 </script>
