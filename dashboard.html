@@ -91,7 +91,7 @@ input[type=text]:focus{border-color:#2563eb}
   <div style="overflow-x:auto">
   <table>
     <thead><tr>
-      <th onclick="sortBy('date')">日期 <span class="sort-icon" id="sort-date">↕</span></th>
+      <th onclick="sortBy('date')">日期 <span class="sort-icon" id="sort-date">↓</span></th>
       <th onclick="sortBy('type')">类型 <span class="sort-icon" id="sort-type">↕</span></th>
       <th onclick="sortBy('name')">REIT <span class="sort-icon" id="sort-name">↕</span></th>
       <th>公告标题</th><th>摘要</th><th>原文</th>
@@ -160,7 +160,7 @@ const TYPE_COLORS = {"收益分配": "#22c55e", "定期报告": "#3b82f6", "月�
 const ASSET_COLORS = {"transportation": "#0ea5e9", "energy": "#f97316", "data_center": "#8b5cf6", "logistics": "#06b6d4", "commercial": "#ec4899", "industrial_park": "#3b82f6", "residential": "#22c55e", "eco_environmental": "#10b981", "other": "#9ca3af"};
 const ASSET_LABELS = {"transportation": "交通基础设施", "energy": "能源", "data_center": "数据中心", "logistics": "仓储物流", "commercial": "消费商业", "industrial_park": "产业园区", "residential": "租赁住房", "eco_environmental": "生态环保", "other": "其他"};
 let fType='',fAsset='',fDate='',fReit='',fSearch='';
-let sortKey='date',sortDir=-1;
+let sortKey='date',sortDir=1;
 function updateStats(rows){
   const reits=new Set(rows.map(r=>r.name));
   document.getElementById('statTotal').textContent=RAW.rows.length;
@@ -206,8 +206,8 @@ function buildFilterBtns(){
   Object.keys(RAW.asset_type_counts).forEach(k=>{const b=document.createElement('button');b.className='filter-btn asset';b.textContent=ASSET_LABELS[k]||k;b.style.setProperty('--ac',ASSET_COLORS[k]||'#9ca3af');b.onclick=()=>{fAsset=fAsset===k?'':k;applyFilters();};af.appendChild(b);});
 }
 function sortBy(key){
-  if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=-1;}
-  ['date','type','name'].forEach(k=>{document.getElementById('sort-'+k).textContent=k===key?(sortDir===-1?'↓':'↑'):'↕';});
+  if(sortKey===key)sortDir*=-1;else{sortKey=key;sortDir=1;}
+  ['date','type','name'].forEach(k=>{document.getElementById('sort-'+k).textContent=k===key?(sortDir===1?'↓':'↑'):'↕';});
   applyFilters();
 }
 let expandedIdx=null;
