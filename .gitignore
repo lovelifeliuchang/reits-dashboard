@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+logs/
+reits_reports/
+.sent_*
+*.log
+.DS_Store
